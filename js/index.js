@@ -28,11 +28,7 @@ const validate = (e) => {
   } else if (email.value == "") {
     messageContainer.innerHTML = "";
     message.innerText = "Write your email address";
-  } else if (
-    allConsent.checked == false ||
-    firstConsent.checked == false ||
-    secondConsent.checked == false
-  ) {
+  } else if (firstConsent.checked != true && secondConsent.checked != true) {
     message.innerText = "You gotta agree to something";
   } else {
     messageContainer.innerHTML = "";
