@@ -22,6 +22,7 @@ const validate = (e) => {
   e.preventDefault();
   let message = document.createElement("li");
   message.setAttribute("class", "message");
+      messageContainer.innerHTML = "";
   if (nameAndSurname.value == "") {
     messageContainer.innerHTML = "";
     message.innerText = "Write your name and surname";
